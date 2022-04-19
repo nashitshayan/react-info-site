@@ -1,38 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	background-color: rgb(125, 125, 125);
+}
 .App {
-  text-align: center;
+	max-width: 550px;
+	margin: 0 auto;
+	background: #282d35;
+	color: #ffffff;
+	min-height: 100vh;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: space-between; */
+}
+.nav {
+	display: flex;
+	align-items: center;
+	background-color: #21222a;
+	padding: 1em;
+}
+.nav--logo_text {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: #61dafb;
+	margin-right: auto;
+}
+.nav--title {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #deebf8;
+}
+.nav--icon {
+	width: 1.6rem;
+	margin-right: 0.375em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* main */
+
+.main {
+	padding: 2em;
+	background-image: url(./images/react-icon-large.png);
+	background-repeat: no-repeat;
+	background-position: right 75%;
+}
+.main--title {
+	letter-spacing: -0.05em;
+	font-weight: 700;
+}
+.main--ul {
+	margin-top: 2em;
+	max-width: 400px;
+}
+.main--ul > * {
+	margin-bottom: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main--ul > li::marker {
+	font-size: 1.5rem;
+	color: #61dafb;
 }
